@@ -95,7 +95,6 @@ const InterestForm = () => {
           />
         </Link>
         <h1 className='text-xl font-semibold '>
-          Booking for
           <a
             className='pl-4 text-lg font-semibold text-gray-900'
             href='tel:+9179972 83111'
@@ -106,14 +105,14 @@ const InterestForm = () => {
       </nav>
 
       <img
-        src='/images/Aprilia.webp'
+        src='/images/desktop2.jpg'
         alt='Banner'
         className='hidden object-cover w-full mt-12 sm:block'
       />
       <img
-        src='/images/WM_Hyundai__October_Offers__at_Bharat_Hyundai.webp'
+        src='/images/mobilebanner2.jpg'
         alt='Mobile Banner'
-        className='block object-cover w-full mt-10 sm:hidden'
+        className='block object-cover w-full mt-24 sm:hidden'
       />
 
       <div className='w-full bg-white flex justify-center 2xl:top-96 border xl:top-80 lg:absolute lg:left-72 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:bg-white lg:p-6 lg:top-96 lg:rounded-2xl lg:shadow-lg lg:w-[90%] lg:max-w-sm lg:max-h-sm'>
@@ -175,19 +174,27 @@ const InterestForm = () => {
                 disabled={loading}
                 className='w-full px-4 py-2 text-sm text-center text-black bg-transparent border-b-2 border-black sm:text-base focus:outline-none'
               >
-                <option value=''>Select Model</option>
-                <option value='I20'>I20</option>
-                <option value='GRAND I10 NIOS'>GRAND I10 NIOS</option>
-                <option value='AURA'>AURA</option>
-                <option value='VERNA'>VERNA</option>
-                <option value='ALCAZAR'>ALCAZAR</option>
-                <option value='TUCSON'>TUCSON</option>
-                <option value='CRETA N LINE'>CRETA N LINE</option>
-                <option value='EXTER'>EXTER</option>
-                <option value='VENUE N LINE'>VENUE N LINE</option>
-                <option value='CRETA'>CRETA</option>
-                <option value='CRETA ELECTRIC'>CRETA ELECTRIC</option>
-                <option value='IONIQ 5'>IONIQ 5</option>
+                <option value='Aprilia SR 125'>SR 125</option>
+                <option value='Aprilia SR 160'>SR 160</option>
+                <option value='Aprilia SR 160 Carbon'>SR 160 Carbon</option>
+                <option value='Aprilia SR 160 Race'>SR 160 Race</option>
+                <option value='Aprilia SXR 125'>SXR 125</option>
+                <option value='Aprilia SXR 160'>SXR 160</option>
+                <option value='Aprilia Tuono 125'>Tuono 125</option>
+                <option value='Aprilia RS 125'>RS 125</option>
+                <option value='Aprilia RS 457'>RS 457</option>
+                <option value='Aprilia Tuono 660'>Tuono 660</option>
+                <option value='Aprilia RS 660'>RS 660</option>
+                <option value='Aprilia Tuareg 660'>Tuareg 660</option>
+                <option value='Aprilia RSV4 1100 Factory'>
+                  RSV4 1100 Factory
+                </option>
+                <option value='Aprilia Tuono V4 1100 Factory'>
+                  Tuono V4 1100 Factory
+                </option>
+                <option value='Aprilia RS 457 Racing Edition'>
+                  RS 457 Racing Edition
+                </option>
               </select>
               {errors.model && (
                 <p className='text-xs text-red-500'>{errors.model}</p>
