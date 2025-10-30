@@ -72238,8 +72238,8 @@
                       'Booking for',
                       (0, dS.jsx)('a', {
                         className: 'pl-4 text-lg font-semibold text-gray-900',
-                        href: 'tel:+9179972 83111',
-                        children: '\ud83d\udcde 79972 83111',
+                        href: 'tel:+919849669988',
+                        children: '\ud83d\udcde 9849669988',
                       }),
                     ],
                   }),
@@ -72726,8 +72726,8 @@
                         children: [
                           (0, dS.jsx)(UL, { className: 'w-5 h-5' }),
                           (0, dS.jsx)('a', {
-                            href: 'tel:+9179972 83111',
-                            children: '79972 83111',
+                            href: 'tel:+919849669988',
+                            children: '9849669988',
                           }),
                         ],
                       }),
@@ -73104,8 +73104,8 @@
                   }),
                   (0, dS.jsx)('a', {
                     className: 'text-lg font-semibold text-gray-900',
-                    href: 'tel:+9179972 83111',
-                    children: '\ud83d\udcde 79972 83111',
+                    href: 'tel:+919849669988',
+                    children: '\ud83d\udcde 9849669988',
                   }),
                 ],
               }),
@@ -74197,7 +74197,7 @@
                             children: [
                               (0, dS.jsx)('h4', {
                                 className: 'font-semibold',
-                                children: '79972 83111',
+                                children: '9849669988',
                               }),
                               (0, dS.jsx)('p', {
                                 className: 'mt-1 text-sm text-gray-600',
@@ -77201,8 +77201,8 @@
                 }),
                 (0, dS.jsx)('a', {
                   className: 'text-lg font-semibold text-gray-900',
-                  href: 'tel:+9179972 83111',
-                  children: '\ud83d\udcde 79972 83111',
+                  href: 'tel:+919849669988',
+                  children: '\ud83d\udcde 9849669988',
                 }),
               ],
             }),
@@ -77364,7 +77364,7 @@
                     (0, dS.jsxs)('p', {
                       children: [
                         'If you have any questions or concerns about our Privacy Policy, feel free to contact us at ',
-                        (0, dS.jsx)('strong', { children: '79972 83111' }),
+                        (0, dS.jsx)('strong', { children: '9849669988' }),
                         '.',
                       ],
                     }),

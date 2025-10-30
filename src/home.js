@@ -3,6 +3,7 @@ import { addDoc, collection, Timestamp } from 'firebase/firestore';
 import { Link, useNavigate } from 'react-router-dom';
 import { db } from './lib/firebase';
 // import OffersCarousel from './OffersCarousel';
+import logo from './images/logo.webp';
 
 import { ToastContainer } from 'react-toastify';
 import {
@@ -86,22 +87,25 @@ const InterestForm = () => {
   return (
     <>
       <ToastContainer position='top-center' autoClose={5000} theme='dark' />
-      <nav className='fixed top-0 left-0 z-50 flex items-center justify-between w-full px-6 py-3 shadow-md md:px-12 lg:px-16 bg-white/30 backdrop-blur-lg'>
-        <Link to={'/'}>
-          <img
-            src={require('./images/logo.webp')}
-            className='h-12'
-            alt='Hyundai Logo'
-          />
-        </Link>
-        <h1 className='text-xl font-semibold '>
+      <nav className='fixed top-0 left-0 z-50 w-full shadow-md bg-white/30 backdrop-blur-md'>
+        <div className='flex items-center justify-between px-4 py-3 md:px-10 lg:px-16'>
+          {/* Logo */}
+          <Link to='/'>
+            <img
+              src={logo}
+              alt='Hyundai Logo'
+              className='h-auto w-28 sm:w-full sm:h-50 md:w-40 lg:w-full lg:h-10'
+            />
+          </Link>
+
+          {/* Phone Number */}
           <a
-            className='pl-4 text-lg font-semibold text-gray-900'
-            href='tel:+9179972 83111'
+            href='tel:+919849669988'
+            className='text-base font-semibold text-gray-900 transition-colors sm:text-lg md:text-xl hover:text-blue-700'
           >
-            📞 79972 83111
+            📞 98496 69988
           </a>
-        </h1>
+        </div>
       </nav>
 
       <img
@@ -112,7 +116,7 @@ const InterestForm = () => {
       <img
         src='/images/mobilebanner2.jpg'
         alt='Mobile Banner'
-        className='block object-cover w-full mt-24 sm:hidden'
+        className='block object-cover w-full mt-12 sm:hidden'
       />
 
       <div className='w-full bg-white flex justify-center 2xl:top-96 border xl:top-80 lg:absolute lg:left-72 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:bg-white lg:p-6 lg:top-96 lg:rounded-2xl lg:shadow-lg lg:w-[90%] lg:max-w-sm lg:max-h-sm'>
@@ -159,9 +163,9 @@ const InterestForm = () => {
                 <option value='' disabled hidden>
                   Select City
                 </option>
-                <option value='Gachibowli'>Gachibowli(HYD)</option>
-                <option value='Nampally'>Nampally(HYD)</option>
-                <option value='KHAMMAM'>Khammam</option>
+                <option value='Gachibowli'>Gachibowli</option>
+                <option value='Miyapur'>Miyapur</option>
+                <option value='Kukatpally'>Kukatpally</option>
               </select>
               {errors.city && (
                 <p className='text-xs text-red-500'>{errors.city}</p>
@@ -174,27 +178,10 @@ const InterestForm = () => {
                 disabled={loading}
                 className='w-full px-4 py-2 text-sm text-center text-black bg-transparent border-b-2 border-black sm:text-base focus:outline-none'
               >
-                <option value='Aprilia SR 125'>SR 125</option>
-                <option value='Aprilia SR 160'>SR 160</option>
-                <option value='Aprilia SR 160 Carbon'>SR 160 Carbon</option>
-                <option value='Aprilia SR 160 Race'>SR 160 Race</option>
-                <option value='Aprilia SXR 125'>SXR 125</option>
-                <option value='Aprilia SXR 160'>SXR 160</option>
-                <option value='Aprilia Tuono 125'>Tuono 125</option>
-                <option value='Aprilia RS 125'>RS 125</option>
-                <option value='Aprilia RS 457'>RS 457</option>
-                <option value='Aprilia Tuono 660'>Tuono 660</option>
-                <option value='Aprilia RS 660'>RS 660</option>
-                <option value='Aprilia Tuareg 660'>Tuareg 660</option>
-                <option value='Aprilia RSV4 1100 Factory'>
-                  RSV4 1100 Factory
-                </option>
-                <option value='Aprilia Tuono V4 1100 Factory'>
-                  Tuono V4 1100 Factory
-                </option>
-                <option value='Aprilia RS 457 Racing Edition'>
-                  RS 457 Racing Edition
-                </option>
+                <option value=''>Select Model</option>
+                <option value='Aprilia Scooters'>Aprilia Scooters</option>
+                <option value='Vespa Scooters'>Vespa Scooters</option>
+                <option value='Aprilia Motorcycles'>Aprilia Motorcycles</option>
               </select>
               {errors.model && (
                 <p className='text-xs text-red-500'>{errors.model}</p>
@@ -429,7 +416,7 @@ export const Footer = () => {
           <p className='flex items-center gap-2 text-gray-300'>
             <Phone className='w-5 h-5' />
             <a href='tel:+919876543210' className='hover:text-red-500'>
-              +91 79972 83111
+              +91 9849669988
             </a>
           </p>
 

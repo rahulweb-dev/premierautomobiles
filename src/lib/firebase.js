@@ -3,12 +3,12 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCu2GjFkBWZCzrbE2Y1mqq8u5uYD-zwTfQ",
-  authDomain: "leads-fc7d4.firebaseapp.com",
-  projectId: "leads-fc7d4",
-  storageBucket: "leads-fc7d4.firebasestorage.app",
-  messagingSenderId: "319374718589",
-  appId: "1:319374718589:web:8da4c94f976a1358b46314",
+  apiKey: "AIzaSyCMPqI7qD1KeIdyt9hEwN7Cu7_Vz4K3RjY",
+  authDomain: "premier-f33d7.firebaseapp.com",
+  projectId: "premier-f33d7",
+  storageBucket: "premier-f33d7.firebasestorage.app",
+  messagingSenderId: "928781414875",
+  appId: "1:928781414875:web:ed55de56e21bc1e464f7fe"
 };
 
 // const firebaseConfig = {
