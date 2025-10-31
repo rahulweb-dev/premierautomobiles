@@ -28,7 +28,7 @@ export default function PrivacyPolicy() {
         </h1>
 
         <p className='mb-6'>
-          At <strong>Bharath Hyundai</strong>, we value your privacy and are
+          At <strong>Premier Automobiles</strong>, we value your privacy and are
           committed to protecting any personal information you share with us.
           This Privacy Policy outlines how we collect, use, disclose, and
           protect your information when you visit our website or interact with
@@ -138,7 +138,7 @@ export default function PrivacyPolicy() {
         </section>
 
         <p className='mt-10 text-sm text-gray-500'>
-          Thank you for trusting Bharath Hyundai. Your privacy is important to
+          Thank you for trusting Premier Automobiles. Your privacy is important to
           us.
         </p>
       </div>{' '}
